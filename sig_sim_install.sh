@@ -100,7 +100,7 @@ Restart=always
 WantedBy=multi-user.target
 Alias=simppp.service
 EOF
-ls /etc/systemd/system/simpp.service
+ls /etc/systemd/system/simppp.service
 echo "done...to test run:\n"
 echo "sudo pppd call gprs"
 echo "while running ifconfig should show a new network interface called ppp0 (this is the sim network)"
