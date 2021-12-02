@@ -7,7 +7,7 @@ sudo apt install ppp -y
 
 
 # save ppp conf file to /etc/ppp/peers/gprs
-echo "installing PPP conf file to /etc/ppp/peers/gprs\n"
+echo "installing PPP conf file to /etc/ppp/peers/gprs"
 cat << EOF > /etc/ppp/peers/gprs
 /dev/ttyUSB2 115200
 # The chat script
@@ -103,3 +103,4 @@ EOF
 ls /etc/systemd/system/simpp.service
 echo "done...to test run:\n"
 echo "sudo pppd call gprs"
+echo "while running ifconfig should show a new network interface called ppp0 (this is the sim network)"
